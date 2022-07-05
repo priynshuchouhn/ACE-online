@@ -199,10 +199,10 @@
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="error" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ae4-1T-Oxi">
-                                                        <rect key="frame" x="0.0" y="231" width="300" height="40"/>
+                                                        <rect key="frame" x="133.5" y="231" width="33.5" height="40"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="Dq3-fI-Onj"/>
-                                                            <constraint firstAttribute="height" constant="40" id="p42-vx-6JM"/>
+                                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="300" id="Dq3-fI-Onj"/>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="p42-vx-6JM"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <color key="textColor" systemColor="systemRedColor"/>
@@ -261,7 +261,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="F6u-my-RDR">
-                                                <rect key="frame" x="57" y="257" width="300" height="260"/>
+                                                <rect key="frame" x="57" y="262" width="300" height="250"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9vf-uG-a1X">
                                                         <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
@@ -295,13 +295,13 @@
                                                             <action selector="loginButtonPressed:" destination="R5Y-i8-JZ4" eventType="touchUpInside" id="IYP-Jb-uYP"/>
                                                         </connections>
                                                     </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="error" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vxz-Sa-Q0s">
-                                                        <rect key="frame" x="0.0" y="210" width="300" height="50"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="error" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vxz-Sa-Q0s">
+                                                        <rect key="frame" x="129" y="210" width="42.5" height="40"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="AAh-54-2cX"/>
-                                                            <constraint firstAttribute="height" constant="50" id="qVe-qe-raU"/>
+                                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="300" id="AAh-54-2cX"/>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="qVe-qe-raU"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <color key="textColor" systemColor="systemRedColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
