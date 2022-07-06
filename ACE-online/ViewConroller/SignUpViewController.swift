@@ -28,7 +28,7 @@ class SignUpViewController: UIViewController {
         Utilities.styleTextField(emaiLabel)
         Utilities.styleTextField(fullNameLabel)
         Utilities.styleTextField(passwordLabel)
-        Utilities.styleFilledButton(signUpButton)
+        Utilities.styleHollowButton(signUpButton)
     }
 
 //    checks and validate the fields and data. if everything is correct then it returns nil otherwise it returns error message
