@@ -7,23 +7,51 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
-
+class HomeViewController: UIViewController, SideMenuBarViewControllerDelegate {
+    
+    
+    
+    
+    var sideMenuBarViewController: SideMenuBarViewController?
+    
+   
+    @IBOutlet weak var leadingConstraintsForSideBar: NSLayoutConstraint!
+    
+    @IBOutlet weak var sideMenuBar: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
+       
+        sideMenuBar.isHidden = true
 
         
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+        if (segue.identifier == "sideMenuSegue") {
+            if let controller = segue.destination as? SideMenuBarViewController
+            {
+                self.sideMenuBarViewController = controller
+                self.sideMenuBarViewController?.delegate = self
+                
+              
+            }
+        }
+       }
 
+    func hideSideMenu() {
+        self.hideSideMenu()
+        }
+
+    private func hideSideMenuBar(){
+        self.sideMenuBar.isHidden = true
+        self.leadingConstraintsForSideBar.constant = -280
+        
+    }
+    @IBAction func sideMenuButtonPressed(_ sender: UIButton) {
+        sideMenuBar.isHidden = false
+        leadingConstraintsForSideBar.constant = 0
+    }
+    
+    @IBAction func tappedOnBackView(_ sender: Any) {
+        self.hideSideMenuBar()
+    }
 }

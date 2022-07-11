@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B35A4A742876BC2400324C14 /* SideMenuBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35A4A732876BC2400324C14 /* SideMenuBarViewController.swift */; };
 		B36DCC2528722A7600536879 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36DCC2428722A7600536879 /* AppDelegate.swift */; };
 		B36DCC2728722A7600536879 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36DCC2628722A7600536879 /* SceneDelegate.swift */; };
 		B36DCC2928722A7600536879 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36DCC2828722A7600536879 /* ViewController.swift */; };
@@ -49,6 +50,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B35A4A732876BC2400324C14 /* SideMenuBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuBarViewController.swift; sourceTree = "<group>"; };
 		B36DCC2128722A7600536879 /* ACE-online.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ACE-online.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B36DCC2428722A7600536879 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B36DCC2628722A7600536879 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				B3AED41A28727B980041C504 /* LoginViewController.swift */,
 				B3AED41C28727BD40041C504 /* SignUpViewController.swift */,
 				B36DCC2828722A7600536879 /* ViewController.swift */,
+				B35A4A732876BC2400324C14 /* SideMenuBarViewController.swift */,
 			);
 			path = ViewConroller;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3900F6D2873E2BA00FD9CDA /* Utilities.swift in Sources */,
+				B35A4A742876BC2400324C14 /* SideMenuBarViewController.swift in Sources */,
 				B3AED41D28727BD40041C504 /* SignUpViewController.swift in Sources */,
 				B3AED41B28727B980041C504 /* LoginViewController.swift in Sources */,
 				B36DCC2928722A7600536879 /* ViewController.swift in Sources */,

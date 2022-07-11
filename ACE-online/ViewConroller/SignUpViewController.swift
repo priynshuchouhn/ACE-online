@@ -77,7 +77,6 @@ class SignUpViewController: UIViewController {
         }
         else{
             
-   
 //            creating the cleaned version of data
             
             let fullName = fullNameLabel.text!.trimmingCharacters(in: .whitespacesAndNewlines)
@@ -85,6 +84,7 @@ class SignUpViewController: UIViewController {
             let password = passwordLabel.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             
             //        create new user
+            
             Auth.auth().createUser(withEmail: email, password: password) { result, err in
 //                check for errors
                 if err != nil {
@@ -96,6 +96,7 @@ class SignUpViewController: UIViewController {
                   let db = Firestore.firestore()
                     db.collection("users").addDocument(data: ["FullName": fullName,
                                                               "Email" : email,
+                                                              "Password" : password,
                                                               "uid" :result!.user.uid]) {(error)in
                         if error != nil {
 //                           show error message
@@ -109,11 +110,8 @@ class SignUpViewController: UIViewController {
     //        transition to home screen
             
             transitionToHome()
-            
         }
-        
     }
-    
 }
 
 

@@ -29,6 +29,7 @@ class LoginViewController: UIViewController {
         Utilities.styleTextField(passwordLabel)
         Utilities.styleFilledButton(loginButton)
     }
+    
     @IBAction func loginButtonPressed(_ sender: UIButton) {
         
 //        field validation
@@ -56,6 +57,7 @@ class LoginViewController: UIViewController {
             }
         }
     }
-    
+     
 }
+
 
