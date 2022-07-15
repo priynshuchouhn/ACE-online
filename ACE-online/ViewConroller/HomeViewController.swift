@@ -44,7 +44,7 @@ class HomeViewController: UIViewController, SideMenuBarViewControllerDelegate {
     private func hideSideMenuBar(){
         
         UIView.animate(withDuration: 0.1) {
-            self.leadingConstraintsForSideBar.constant = 10
+            self.leadingConstraintsForSideBar.constant = 0
             self.view.layoutIfNeeded()
         } completion: { (status) in
             UIView.animate(withDuration: 0.1) {
